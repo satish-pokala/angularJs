@@ -1,0 +1,35 @@
+{
+  "name": "Modules-With-Webpack",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "preinstall": "typings install --global --save dt~core-js",
+    "serve": "webpack-dev-server --config webpack.config.js --inline --progress"
+  },
+  "dependencies": {
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "@types/node": "^7.0.16",
+    "angular2-router-loader": "^0.3.4",
+    "angular2-template-loader": "^0.6.0",
+    "clean-webpack-plugin": "^0.1.13",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-loader": "^0.4.5",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.3.0",
+    "style-loader": "^0.17.0",
+    "ts-loader": "^0.8.2",
+    "typings": "^2.1.0",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.3.0",
+    "zone.js": "^0.8.9"
+  }
+}

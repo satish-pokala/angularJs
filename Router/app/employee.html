@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Info</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>Emp Name</th>
+            <th>Emp Designation</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of empObj">
+                <td><a routerLinkActive="active" routerLink="empDetail"> {{employee.empName}}</a></td>
+                <td>{{employee.empDesignation}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

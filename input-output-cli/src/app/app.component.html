@@ -1,0 +1,23 @@
+<h1>
+  {{title}}
+</h1>
+
+
+<div appHidePipesDiv>
+
+  Pipes :
+
+  <span>Number Pipe</span> {{average | number:'3.1-2'}}
+
+  <br>
+
+  <span>date pipe </span>{{date | date:'short'}}
+
+  <br>
+
+  <span>{{data | json}}</span>
+
+
+</div>
+
+<router-outlet></router-outlet>

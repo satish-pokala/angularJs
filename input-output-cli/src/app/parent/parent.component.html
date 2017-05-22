@@ -1,0 +1,27 @@
+
+
+
+<div class="col-xs-12">
+
+  <div class="col-xs-6">
+    <p>
+      Parent Component
+    </p>
+
+    <input type="button" value="Increase Count" (click)="increaseCount()">
+
+    <div>
+      Data from child comp : {{cameFromChild}}
+    </div>
+  </div>
+
+
+
+
+  <div class="col-xs-6">
+    <app-child (textUpdate)="cameFromChild=$event" [passengersCount]="psgCount"></app-child>
+
+  </div>
+</div>
+
+

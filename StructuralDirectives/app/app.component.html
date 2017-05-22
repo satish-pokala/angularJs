@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div><span><h3><input type="button" (click)="displayInfo=!displayInfo" value="Display"></h3></span></div>
+
+<div *ngIf="displayInfo">
+
+    Hello this div will be displayed based on ngIf structural directive
+
+</div>
+
+<br/>
+
+<div>
+    Similarly we have ngFor , ngSwitch etc those are called as structural directives.
+</div>
+
+</body>
+</html>

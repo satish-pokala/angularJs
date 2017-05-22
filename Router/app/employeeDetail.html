@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Info</title>
+</head>
+<body>
+<table border="1" cellpadding="3">
+    <thead>
+    <th>Emp Name</th>
+    <th>Emp Designation</th>
+    <th>Emp Age</th>
+    <th>Emp Address</th>
+    <th>Emp Mobile</th>
+    <th>Emp Email</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of empObj">
+        <td>{{employee.empName}}</td>
+        <td>{{employee.empDesignation}}</td>
+        <td>{{employee.empAge}}</td>
+        <td>{{employee.empAddress}}</td>
+        <td>{{employee.empPhone}}</td>
+        <td>{{employee.empEmail}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
